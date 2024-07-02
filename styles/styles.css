@@ -23,7 +23,7 @@ body {
 h1 {
     font-family: var(--fonte-primaria);
     font-weight: 400px;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-style: normal;
 }
 
@@ -49,7 +49,7 @@ p {
     font-family: var(--fonte-secundaria);
     font-optical-sizing: auto;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: var(--cor-terciaria); 
     text-decoration: none;
 }
@@ -62,11 +62,12 @@ p {
     display:flex;
     align-items: center;
     padding: 8% 15%;
+    gap: 82px;
 
 }
 
 .apresentacao__conteudo {
-    width:615px;
+    width:50%;
     display:flex;
     flex-direction:column;
     gap: 30px;
@@ -93,15 +94,15 @@ p {
 .apresentacao__links__subtitulo {
     font-family: var(--fonte-primaria);
     font-weight: 400px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
 }
 
-.apresentacao__links__link {
+.apresentacao__links__navegacao {
     display: flex;
     justify-content: center;
     box-sizing: border-box;
-    width: 370px;
+    width: 50%;
     gap: 16px;
     padding: 16px;
 
@@ -112,7 +113,7 @@ p {
     font-family: var(--fonte-secundaria);
     font-optical-sizing: auto;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
     text-decoration: none;
     color: var(--cor-secundaria);
@@ -128,9 +129,12 @@ p {
 } 
 
 img {
-    height: 488px;
-    width: 550px;
+
     display: inline;
+}
+
+.apresentacao__imagem {
+    width: 50%
 }
 
 .rodape {
@@ -144,6 +148,25 @@ img {
     font-family: var(--fonte-secundaria);
     font-optical-sizing: auto;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+        
+    }
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;     
+    }
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
 }
